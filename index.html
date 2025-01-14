@@ -11,15 +11,22 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #4e54c8, #8f94fb, #1e90ff);
-            color: #ffffff;
-            text-align: center;
             margin: 0;
             padding: 0;
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            background: linear-gradient(45deg, #ff7eb3, #8f94fb, #4e54c8, #32cd32);
+            background-size: 300% 300%;
+            animation: gradientBackground 8s infinite ease-in-out;
+            color: #ffffff;
+            text-align: center;
+        }
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         .container {
             background: rgba(0, 0, 0, 0.7);
